@@ -30,7 +30,9 @@ namespace LearningDelegateAndEvent
 
             #region Teating Task 2
             FileLocator locator = new FileLocator(HandleCustomEvent);
-            locator.BrowseFileDirectory("C:\\Users\\Sony\\Desktop\\Технологии программирования\\Лекции");
+            Console.WriteLine("Введите путь к каталогу");
+            string path = Console.ReadLine();
+            locator.BrowseFileDirectory(path);
             #endregion // Teating Task 2
         }
     }
